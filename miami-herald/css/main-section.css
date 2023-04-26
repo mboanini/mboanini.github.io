@@ -132,6 +132,26 @@
     margin: -15px;
 }
 
+#articles-grid{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    width: auto;
+    margin: -15px;
+}
+
+#column-1{
+    grid-area: column-1;
+}
+
+#column-2{
+    grid-area: column-2;
+}
+
+#white-space-latest-news{
+    grid-area: white-space;
+}
+
 /*Colonna 1*/
 
 #column-1{

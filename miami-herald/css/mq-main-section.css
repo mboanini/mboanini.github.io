@@ -18,42 +18,8 @@
         width: 1170px;
     }
 
-    /*Colonna 1*/
-    #column-1{
-        width: 380px;
-    }
-
-    #latest-news{
-        width: 350px;
-    }
-
-    /*Colonna 2*/
-    #column-2{
-        width: 760px;
-    }
-
-    #column-2-part-1{
-        width: 790px;
-    }
-
-    #article-1{
-        width: 760px;
-    }
-
-    #column-2-part-2{
-        width: 790px;
-    }
-
-    .c2p2-article{
-        width: 365px;
-    }
-
-    #column-2-part-3{
-        width: 790px;
-    }
-
-    .c2p3-article{
-        width: 365px;
+    #articles-grid{
+        width: 1170px;
     }
 
     /*Articoli video*/
@@ -121,6 +87,13 @@
     .articles-flex{
         flex-direction: row;
         justify-content: flex-start;
+    }
+
+    #articles-grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "column-1 column-2";
+        margin: -15px;
     }
 }
 
@@ -205,7 +178,6 @@
     .mySlides{
         width: 728px;
         height: 410px;
-
     }
 }
 
@@ -269,6 +241,10 @@
     /*Articoli di testo*/
     .articles-flex{
         margin: 0;
+    }
+
+    #articles-grid{
+        margin:0;
     }
 
     #column-1{
