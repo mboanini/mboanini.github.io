@@ -153,11 +153,9 @@
 }
 
 /*Colonna 1*/
-
 #column-1{
-    width: auto;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 #latest-news{
@@ -343,7 +341,6 @@
     margin: 15px;
     flex: 40%;
 }
-
 
 /*Articoli video*/
 .label-section{

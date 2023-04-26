@@ -95,20 +95,15 @@
         grid-template-areas: "column-1 column-2";
         margin: -15px;
     }
-}
 
-@media screen and (max-width: 1049px){
-    /*Articoli di testo*/
     #column-1{
-        flex-direction: row;
-    }
-
-    #latest-news{
-       width: 46%;
+        width:auto;
+        display:flex;
+        flex-direction:column;
     }
 }
 
-@media screen and (max-width: 1050px) and (min-width: 1020px){
+@media screen and (max-width: 1049px) and (min-width: 1020px){
     /*Articoli di testo*/
     .c2p3-article{
         flex: 25%;
