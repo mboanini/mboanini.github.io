@@ -6,41 +6,41 @@
 
 /*Slideshow*/
 #slider-bar{
-    height:20px;
-    display:grid;
-    align-content: center;
-    justify-content: center;
-    column-gap: 5px;
+    text-align: center;
 }
 
-#slider-bar svg{
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: transparent;
     border-radius: 50%;
     border: 2px solid #707070;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.button-current-photo{
-    fill: transparent;
+.active {
+    background-color: #4C5DC8;
 }
 
-.button-current-photo:hover{
-    fill: #4C5DC8;
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
-#slider{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
-#slideshow-grid{
-    display: grid;
-    grid-auto-flow: column;
+#slideshow-container{
+    position: relative;
+    margin: auto;
 }
 
 .slideshow-item{
-    position: relative;
-    height: 320px;
+    display: none;
 }
 
 .image{
@@ -92,30 +92,6 @@
     background-color: transparent;
 }
 
-.button-div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#button-prev{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-#button-next{
-    justify-content: flex-start;
-}
-
-.slide-button{
-    width: 50px;
-    height: 50px;
-    fill: #4C5DC8;
-    padding: 2px;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-}
 
 /*Articoli di testo*/
 .articles-section{
@@ -272,6 +248,10 @@
     text-decoration: none;
 }
 
+.article-title a:hover{
+    text-decoration: underline;
+}
+
 .article-data{
     font-family: "Noto Sans", sans-serif;
     font-size: 12px;
@@ -297,6 +277,10 @@
 #article-1-title a{
     font-size: 30px;
     font-weight: bold;
+}
+
+#article-1-title a:hover{
+    text-decoration: underline;
 }
 
 #article-1-subtitle{

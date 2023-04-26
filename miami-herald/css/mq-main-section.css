@@ -1,11 +1,7 @@
 @media screen and (min-width: 1200px){
     /*Slideshow*/
-    #slider{
-        width: 1140px;
-    }
-
-    #slideshow-grid{
-        width: 700px;
+    #slideshow-container{
+        width: 800px;
     }
 
     /*Articoli di testo*/
@@ -163,18 +159,6 @@
     }
 }
 
-@media screen and (min-width: 910px){
-    /*Slideshow*/
-    #slider-photos-container{
-        width: 850px;
-        height: 410px;
-    }
-
-    .mySlides{
-        width: 728px;
-        height: 410px;
-    }
-}
 
 @media screen and (min-width: 690px) and (max-width: 1020px){
     /*Articoli video*/
@@ -200,15 +184,6 @@
 @media screen and (max-width: 767px){
     .articles-section{
         padding: 0 15px;
-    }
-
-    /*Slideshow*/
-    .button-div{
-        display: none;
-    }
-
-    .slide-button{
-        display: none;
     }
 
     /*Articoli di testo*/

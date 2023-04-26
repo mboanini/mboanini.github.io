@@ -200,128 +200,103 @@
             <!--Slideshow-->
             <div id="slideshow" class="articles-section">
                 <div id="slider-bar">
-                    <div id="current-photo">
-                        <svg class="button-current-photo" height="20" width="20" data-index="0" onclick="currentDiv(1)">
-                            <circle cx="10" cy="10" r="9"></circle>
-                        </svg>
-                        <svg class="button-current-photo" height="20" width="20" data-index="1" onclick="currentDiv(2)">
-                            <circle cx="10" cy="10" r="9"></circle>
-                        </svg>
-                        <svg class="button-current-photo" height="20" width="20" data-index="2" onclick="currentDiv(3)">
-                            <circle cx="10" cy="10" r="9"></circle>
-                        </svg>
-                        <svg class="button-current-photo" height="20" width="20" data-index="3" onclick="currentDiv(4)">
-                            <circle cx="10" cy="10" r="9"></circle>
-                        </svg>
-                        <svg class="button-current-photo" height="20" width="20" data-index="4" onclick="currentDiv(5)">
-                            <circle cx="10" cy="10" r="9"></circle>
-                        </svg>
-                    </div>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
-                <div id="slider">
-                    <div id="slideshow-grid">
-                        <div class="button-div" id="button-prev">
-                            <svg class="button prev slide-button" role="button" onclick="plusDivs(-1)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM384 288H205.3l49.38 49.38c12.5 12.5 12.5 32.75 0 45.25s-32.75 12.5-45.25 0L105.4 278.6C97.4 270.7 96 260.9 96 256c0-4.883 1.391-14.66 9.398-22.65l103.1-103.1c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L205.3 224H384c17.69 0 32 14.33 32 32S401.7 288 384 288z"></path></svg>
+                <div id="slideshow-container">
+                    <div id="slideshow-item-1" class="slideshow-item fade">
+                        <div class="image">
+                            <img src="images/slideshow-1.jpg" alt="slideshow-1"/>
                         </div>
-                        <div id="slideshow-item-1" class="slideshow-item">
-                            <div class="image">
-                                <img src="images/slideshow-1.jpg" alt="slideshow-1"/>
-                            </div>
-                            <div class="slideshow-description">
-                                <a href="https://account.miamiherald.com/paywall/stop?resume=274687916#featured-carousel-1">
-                                    When will Miami and the Fort Lauderdale see the nastiest weather? What the forecasters say
-                                </a>
-                                <div id="subtitle-1" class="subtitle">Tornado activity is possible.</div>
-                            </div>
+                        <div class="slideshow-description">
+                            <a href="https://account.miamiherald.com/paywall/stop?resume=274687916#featured-carousel-1">
+                                When will Miami and the Fort Lauderdale see the nastiest weather? What the forecasters say
+                            </a>
+                            <div id="subtitle-1" class="subtitle">Tornado activity is possible.</div>
                         </div>
-                        <div id="slideshow-item-2" class="slideshow-item">
-                            <div class="image">
-                                <img src="images/slideshow-2.jpg" alt="slideshow-2"/>
-                            </div>
-                            <div class="slideshow-description">
-                                <a href="https://account.miamiherald.com/paywall/stop?resume=274677556#featured-carousel-2">
-                                    Cuban migrants arrive in Havana as U.S. restarts deportation flights after two-year halt
-                                </a>
-                                <div id="subtitle-2" class="subtitle">
-                                    The United States resumes deportation flights to Cuba after two-year halt under a 2017
-                                    agreement whose results have been questioned in the past.
-                                </div>
-                            </div>
-                        </div>
-                        <div id="slideshow-item-3" class="slideshow-item">
-                            <div class="image">
-                                <img src="images/slideshow-3.jpg" alt="slideshow-3"/>
-                            </div>
-                            <div class="slideshow-description">
-                                <a href="https://account.miamiherald.com/paywall/stop?resume=274630456#featured-carousel-3">
-                                    Few complained of 'woke' classes at Florida universities. Still, DeSantis pushed new bans
-                                </a>
-                                <div id="subtitle-3" class="subtitle">
-                                    Records show few complaints of indoctrination or other violations of Stop WOKE at Florida
-                                    Universities last year. But new bills, SB266 and HB999, backdoor the enjoined law.
-                                </div>
-                            </div>
-                        </div>
-                        <div id="slideshow-item-4" class="slideshow-item">
-                            <div class="image">
-                                <img src="images/slideshow-4.jpg" alt="slideshow-4"/>
-                            </div>
-                            <div class="slideshow-description">
-                                <a href="https://account.miamiherald.com/paywall/stop?resume=274685866#featured-carousel-4">
-                                    Colombia deports opposition leader Juan Guaidò to Miami ahead of summit on Venezuela
-                                </a>
-                                <div id="subtitle-4" class="subtitle">
-                                    Juan Guaido was deported by the Colombian government hours before it was to host a summit on
-                                    the Venezuelan crisis
-                                </div>
-                            </div>
-                        </div>
-                        <div id="slideshow-item-5" class="slideshow-item">
-                            <div class="image">
-                                <img src="images/slideshow-5.jpg" alt="slideshow-5"/>
-                            </div>
-                            <div class="slideshow-description">
-                                <a href="https://account.miamiherald.com/paywall/stop?resume=274658711#featured-carousel-5">
-                                    President Biden announces he will run for reelection, with Harris on the ticket
-                                </a>
-                                <div id="subtitle-5" class="subtitle">
-                                    The reelection video also features footage of Vice President Kamala Harris, who will again join Biden on the Democratic ticket.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="button-div" id="button-next">
-                            <svg class="button next slide-button" role="button" onclick="plusDivs(+1)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM406.6 278.6l-103.1 103.1c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25L306.8 288H128C110.3 288 96 273.7 96 256s14.31-32 32-32h178.8l-49.38-49.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l103.1 103.1C414.6 241.3 416 251.1 416 256C416 260.9 414.6 270.7 406.6 278.6z"></path></svg>
-                        </div>
-
-                        <script>
-                            let slideIndex = 1;
-                            showDivs(slideIndex);
-
-                            function plusDivs(n) {
-                                showDivs(slideIndex += n);
-                            }
-
-                            function currentDiv(n) {
-                                showDivs(slideIndex = n);
-                            }
-
-                            function showDivs(n) {
-                                let i;
-                                const x = document.getElementsByClassName("slideshow-item");
-                                if (n > x.length) {
-                                    slideIndex = 1
-                                }
-                                if (n < 1) {
-                                    slideIndex = x.length
-                                }
-                                for (i = 0; i < x.length; i++) {
-                                    x[i].style.display = "none";
-                                }
-                                x[slideIndex - 1].style.display = "block";
-                            }
-                        </script>
-
                     </div>
+                    <div id="slideshow-item-2" class="slideshow-item fade">
+                        <div class="image">
+                            <img src="images/slideshow-2.jpg" alt="slideshow-2"/>
+                        </div>
+                        <div class="slideshow-description">
+                            <a href="https://account.miamiherald.com/paywall/stop?resume=274677556#featured-carousel-2">
+                                Cuban migrants arrive in Havana as U.S. restarts deportation flights after two-year halt
+                            </a>
+                            <div id="subtitle-2" class="subtitle">
+                                The United States resumes deportation flights to Cuba after two-year halt under a 2017
+                                agreement whose results have been questioned in the past.
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slideshow-item-3" class="slideshow-item fade">
+                        <div class="image">
+                            <img src="images/slideshow-7.jpg" alt="slideshow-7"/>
+                        </div>
+                        <div class="slideshow-description">
+                            <a href="https://account.miamiherald.com/paywall/stop?resume=274733246#featured-carousel-2">
+                                'A legal mess': Disney district's DeSantis-appointed board voids previous agreements
+                            </a>
+                            <div id="subtitle-3" class="subtitle">
+                                The Central Florida Tourism Oversight Board delivered more blows to Disney as the feud
+                                between the company and DeSantis heats up with a lawsuit.
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slideshow-item-4" class="slideshow-item fade">
+                        <div class="image">
+                            <img src="images/slideshow-4.jpg" alt="slideshow-4"/>
+                        </div>
+                        <div class="slideshow-description">
+                            <a href="https://account.miamiherald.com/paywall/stop?resume=274685866#featured-carousel-4">
+                                Colombia deports opposition leader Juan Guaidò to Miami ahead of summit on Venezuela
+                            </a>
+                            <div id="subtitle-4" class="subtitle">
+                                Juan Guaido was deported by the Colombian government hours before it was to host a summit on
+                                the Venezuelan crisis
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slideshow-item-5" class="slideshow-item fade">
+                        <div class="image">
+                            <img src="images/slideshow-6.jpg" alt="slideshow-6"/>
+                        </div>
+                        <div class="slideshow-description">
+                            <a href="https://account.miamiherald.com/paywall/stop?resume=274739936#featured-carousel-1">
+                                Disney fires back at DeSantis, files suit claiming 'retaliation'
+                            </a>
+                            <div id="subtitle-5" class="subtitle">
+                                "A targeted campaign of government retaliation - orchestrated at every step by Governor
+                                DeSantis as punishment for Disney's protected speech - now threatens Disney's business operations..."
+                                the lawsuit says
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        let slideIndex = 0;
+                        showSlides();
+
+                        function showSlides() {
+                            let i;
+                            let slides = document.getElementsByClassName("slideshow-item");
+                            let dots = document.getElementsByClassName("dot");
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) {slideIndex = 1}
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex-1].style.display = "block";
+                            dots[slideIndex-1].className += " active";
+                            setTimeout(showSlides, 2000); // Change image every 2 seconds
+                        }
+                    </script>
                 </div>
             </div>
             <!-- Prima parte articoli-->
