@@ -440,6 +440,19 @@
     translate: 2px;
 }
 
+.tmplt-label-div{
+    width: 100%;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 3;
+    background-color: transparent;
+}
+
 .tmplt-label{
     font-family: "Noto Sans", sans-serif;
     font-weight: bold;
@@ -672,6 +685,18 @@
     position: relative;
 }
 
+#img-wt-description-title{
+    width: 100%;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+}
+
 #img-wt-description-title span{
     color: #FFFFFF;
     background-color: #373737;
@@ -682,7 +707,6 @@
     width: 120px;
     position: absolute;
     top:0;
-    left:0;
 }
 
 #link-img-iwd{
