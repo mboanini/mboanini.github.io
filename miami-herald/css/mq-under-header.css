@@ -53,22 +53,3 @@
         height: 30px;
     }
 }
-/*
-@media screen and (min-width: 505px) and (max-width: 600px){
-    #under-header-container{
-        margin: 10px auto 83px auto;
-        height: 27px;
-    }
-}
-
-@media screen and (max-width: 504px){
-    #under-header-container{
-        height: 27px;
-        margin: 10px 0 83px 0;
-    }
-}
-*/
-
-
-
-
