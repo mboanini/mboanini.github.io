@@ -159,7 +159,6 @@
     }
 }
 
-
 @media screen and (min-width: 690px) and (max-width: 1020px){
     /*Articoli video*/
     #column-2-v{
@@ -188,7 +187,7 @@
 
     /*Articoli di testo*/
     #column-1{
-        flex-direction: row-reverse;
+        grid-template-areas: "white-space latest-news";
     }
 
     /*Ultima parte articoli*/
@@ -219,6 +218,12 @@
 
     #column-1{
         margin: 30px 0;
+        grid-template-columns: 1fr 0;
+        grid-template-areas: "latest-news white-space";
+    }
+
+    #white-space-latest-news{
+        display: none;
     }
 
     #latest-news{
