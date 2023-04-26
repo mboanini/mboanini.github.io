@@ -1,0 +1,47 @@
+@media screen and (max-width: 1024px) and (min-width:767px) {
+    #main-header-container{
+        height:273px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "search sign"
+            "date weather"
+            "logo logo"
+            "nav nav";
+        grid-template-rows: 30px 33px 108px 50px;
+    }
+
+    #daily{
+        margin:0;
+    }
+}
+
+@media screen and (max-width:767px){
+    #main-header-container{
+        height:218px;
+        padding: 15px 15px 0 15px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "search sign"
+            "logo logo"
+            "nav nav";
+        grid-template-rows: 30px 108px 50px;
+    }
+
+    #mh-item-21 {
+        display:none;
+    }
+
+    #mh-item-23 {
+        display:none;
+    }
+
+    #search-form{
+        display:none;
+    }
+}
+
+@media screen and (max-width:481px){
+    #main-header-container{
+        height:auto;
+    }
+}

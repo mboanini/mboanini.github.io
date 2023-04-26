@@ -1,0 +1,43 @@
+#f-nav{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    width:auto;
+    padding-right:30px;
+    padding-left:30px;
+    text-align: center;
+}
+
+#f-nav a{
+    height: 19px;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 15px;
+    display:inline-block;
+}
+
+#f-nav-1{
+    width: 81px;
+}
+
+#f-nav-2{
+    width: 156px;
+}
+
+#f-nav-3{
+    width: 114px;
+}
+
+#f-nav-4{
+    width:166px;
+}
+
+#f-nav-5{
+    width: 128px;
+}
+
+
+

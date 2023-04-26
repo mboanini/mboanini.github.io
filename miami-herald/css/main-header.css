@@ -1,0 +1,277 @@
+#main-header-container{
+    width:auto;
+    height:218px;
+    padding: 30px 30px 0 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "search . sign" "date logo weather" "nav nav nav";
+    grid-template-rows: 30px 108px 50px;
+    gap: 15px;
+}
+
+#main-header-container *{
+    box-sizing: border-box;
+}
+
+#menu-search{
+    grid-area: search;
+}
+#sign-in{
+    grid-area: sign;
+}
+#mh-item-21{
+    grid-area: date;
+}
+#mh-item-22{
+    grid-area: logo;
+}
+#mh-item-23{
+    grid-area: weather;
+}
+#nav{
+    grid-area: nav;
+}
+
+/*Riga 1*/
+/* Barra di ricerca e Hamburger Menu*/
+#mh-item-21{
+    display:flex;
+    vertical-align: baseline;
+    justify-content: flex-start;
+}
+
+#menu-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top:2px;
+}
+
+#btn-hamburger-menu{
+    border:none;
+    margin-top:2px;
+}
+
+#btn-magnifying-class{
+    border:none;
+    margin-top: 1px;
+}
+
+#search{
+    margin-left: 2px;
+    border:none;
+}
+
+#search:focus{
+    outline: none;
+    border-bottom: 1px solid #000000;
+    border-radius: 2px;
+}
+
+#search-form{
+    margin-left: 16px;
+}
+
+/*Registrazione*/
+#sign-in{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2px;
+}
+
+#log-in a{
+    text-decoration: none;
+    color: #000000;
+    /*width: 46px;
+    height: 13px;*/
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#log-in a:hover{
+    text-decoration: underline;
+}
+
+#btn-subscribe{
+    border: none;
+    background-color: #00223e;
+    color: #FFFFFF;
+    height: 30px;
+    width: 98.17px;
+    margin-left: 15px;
+    border-radius: 3px;
+    padding: 0.4em 1em;
+}
+
+#btn-subscribe-link{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #00223e;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.25px;
+}
+
+#btn-subscribe-link:hover{
+    color:#ffd71a;
+}
+
+/*Riga 2*/
+/*Data*/
+#mh-item-21{
+    display:flex;
+    vertical-align: baseline;
+}
+#daily {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width:293px;
+    height:33px;
+    margin:auto 0;
+}
+
+#data-text{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#eEdition-daily{
+    margin-top:2px;
+}
+
+#eEdition-daily a{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+#eEdition-daily a:hover{
+    text-decoration: underline;
+}
+
+/*Logo*/
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#title-link{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 10px;
+    letter-spacing: 0.25px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#miami-herald-title{
+    width: 100%;
+    height: 75px;
+}
+
+#sub-title{
+    width: auto;
+    /*height: 13px;*/
+    text-decoration: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/*Meteo*/
+#mh-item-23{
+    display:flex;
+    justify-content: flex-end;
+    vertical-align: baseline;
+}
+
+#weather-forecast{
+    width: 114px;
+    height: 40px;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin:auto 0 auto 0;
+}
+
+#weather-forecast a{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    box-sizing:content-box;
+}
+
+#weather-icon{
+    width: 40px;
+    height: 40px;
+}
+
+
+#weather-forecast a:hover{
+    text-decoration: underline;
+}
+
+/*Riga 3*/
+/*Nav bar*/
+
+#nav{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-top: 2px solid #000000;
+    border-bottom: 1px solid #000000;
+    text-align: center;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#nav::-webkit-scrollbar {
+    height: 2px;
+    color: #dbdbdb;
+}
+
+#nav::-webkit-scrollbar-thumb {
+    background: #dbdbdb;
+}
+
+#nav ul{
+    list-style-type: none;
+    margin:0;
+    padding:1em 0 1em 0;
+}
+
+#nav li{
+    display: inline;
+    margin: 0 0.5em 0 0.5em;
+}
+
+#news{
+    margin-left:0;
+}
+
+#nav .part-1{
+    font-weight: bold;
+}
+
+#nav li a{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+}
+
+#nav li a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,68 @@
+/*container*/
+#header{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 35px;
+    position:relative;
+}
+
+.header-item{
+    height: 35px;
+}
+
+.header-logo{
+    height:15px;
+    padding: 10px 30px;
+    display: inline;
+}
+
+.header-item a{
+    color: transparent;
+    background-color: transparent;
+}
+
+#header-1{
+    background-color: #dbdbdb;
+    width: 151.01px;
+    border-radius: 0 1.5px 0 0;
+}
+
+
+.header-icon{
+    display: none;
+    width: 24px;
+    height: 24px;
+
+}
+
+#miami-herald-logo{
+    background-color: #FFFFFF;
+    width:90.34px;
+    border-radius: 0 1.5px 0 0;
+}
+
+#header-2{
+    width: 94.36px;
+}
+
+#miami-logo{
+    width: 34.36px;
+}
+
+#header-3{
+    width: 159.13px;
+}
+
+#fl-keys-news-logo{
+    width: 99.13px;
+}
+
+#header-4{
+    width: 292.65px;
+}
+
+#el-nuevo-herald-logo{
+    width: 232.65px;
+}
